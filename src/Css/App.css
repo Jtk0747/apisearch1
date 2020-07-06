@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+
+.App-title {
+  text-align: center;
+  font-size: larger;
+  padding: 15px;
+ }
+
+ .cards{
+   float: left;
+   width: 20%;
+   padding: 0 10px;
+ }
+
+ .row{
+  margin: 0 -5px;
+ }
+
+
+ 
