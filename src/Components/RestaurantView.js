@@ -5,7 +5,7 @@ import '../Css/App.css';
 
 const RestaurantList = props => {
   return(
-    <div>
+    <div className='view'>
       <Row>
       { props.restaurants && props.restaurants.length > 0 ? 
       props.restaurants.map(restaurant => {

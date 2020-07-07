@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getVisibleRestaurants } from '../selectors/Selectors';
 import SearchRestaurants from './SearchForm';
 import { Container } from 'reactstrap';
+import '../Css/App.css';
 
 class RestaurantContainer extends Component {
   render() {
@@ -16,7 +17,7 @@ class RestaurantContainer extends Component {
         <Container>
           <SearchRestaurants />
           { this.props.loading ? <p>Loading</p> : null }
-          <p>Total items: { this.props.refine ? this.props.restaurants.length : this.props.total }</p> 
+          <p className='total'>Total items: { this.props.refine ? this.props.restaurants.length : this.props.total }</p> 
           <RestaurantList restaurants={this.props.restaurants} />
         </Container>
       </div>
