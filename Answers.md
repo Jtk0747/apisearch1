@@ -26,5 +26,5 @@
 ## A) I would improve it by adding additional information about the restaurant like its cuisine type, keeping it  more light enough to work it faster even after improving it.
 
 6.	Please describe yourself using JSON.
-## A) I have worked many times with JSON files, I personally like working around the JSON is because it is faster and it works with almost all the langauges,  the most challenging thing about it is when we try to combine and refining the very complex data objects.
+## A) {"firstname": "Tej Kiran","lastname": "jasti","age": "24","email": "tejjasti@gmail.com","phone": "51947607","city": "Toronto","province": "Ontario","passions": ["gaming","codingchallenges","longdrives"}
 
