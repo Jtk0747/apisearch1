@@ -1,54 +1,28 @@
 1.	How long did you spend on the coding assignment? What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add.
 
-A). I spend around 22 hours on this assignment  to resolve bug fixes and many more . I need to work on SEO more to ake it visible and i dont have experiecne in WCAG so i will try to make more accessible . I will do some more styling for the cards.
+##A). I've spent almost 16 hours on this assignment to meet all the required criteria . I would like to add more refining option, some styling like how cards look and few effects to get a better user Experience.
 
 2.	What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 
-A). I think Redux is the most useful featrue i enjoyed writing code with redux because it sepearates Presentational components with container components which hels to reduce coding and resue the components.
+##A) The best feature of writing the code with jsx in react is that we can build different reusable components which contains both HTML syntax and logic.below is the snippet of syntax where you can see both the HTML syntax and the js Logic about returning the total restaurents.
 
-
-
-code :
-
-
-#import {
-    FETCH_DATA_BEGIN,
-    FETCH_DATA_SUCCESS,
-    FETCH_DATA_FAILURE,
-    ADD_REFINE_DATA
-  } from '../actions/Actions';
-  
-  const initialState = {
-    restaurants: [],
-    refine: '',
-    city: '',
-    total_items: 0,
-    loading: false,
-    error: null
-  };
-  
-  const restaurantReducer = (state = initialState, action) => {
-    switch (action.type) {
-       case FETCH_DATA_BEGIN:
-        return {
-          ...state,
-          loading: true,
-          error: null
-        };
+    <div>
+        <Container>
+          <SearchRestaurants />
+          {this.props.loading ? <p>Loading</p> : null }
+          <p className='total'>Total items: { this.props.refine ? this.props.restaurants.length : this.props.total }</p> 
+          <RestaurantList restaurants={this.props.restaurants} />
+        </Container>
+      </div>
   
     
 3.	How would you track down a performance issue in production? Have you ever had to do this?
-
-A).Identify issues by performing a full code review of each app ,inefficent code to be identified in initail stages it take too much memory and cpu resources and make the application too big which makes minor issurs to be the biggest issues in application. personally i done it once  with my code when i am working on my last project.
-
+##A) we can track down a performance issue in production when we do a unit test in different browsers and find out performance issues and try solving them. I personally do this everytime when i finish coding my task and before pushing my code to QA team.
 
 
 4.	How would you improve the API that you just used?
-
-A). Increased System status visbiltiy helps to improve the API , need to improve the information helps to understand people who use to invoke the api.
-Include to give better viewbility of the page. Include information about distance from my location to the restaurants. reviews about the restauratns and specify what the restuarant is best for.
+##A) I would improve it by adding additional information about the restaurant like its cuisine type, keeping it  more light enough to work it faster even after improving it.
 
 5.	Please describe yourself using JSON.
-
-A). JSON  is Faster and syntax is very easy to use  which helps to parsing the data and exucte the data in faster way. It is compatibile with wide range of browsers and os made with JSON require less effort to make it compatabile with browser. In my view i need to verify the app on differetn browsers but it gives the functionality.It sotres data in the array whick makes it superior for web APIs
+##A) I have worked many times with JSON files, I personally like working around the JSON is because it is faster and it works with almost all the langauges,  the most challenging thing about it is when we try to combine and refining the very complex data objects.
 
