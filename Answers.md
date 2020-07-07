@@ -19,7 +19,7 @@
 ## A) The part that challenged me the most in this assingment is setting the new state with reducers based upon the users action. 
 
 4.	How would you track down a performance issue in production? Have you ever had to do this?
-## A) we can track down a performance issue in production when we do a unit test in different browsers and find out performance issues and try solving them. I personally do this everytime when i finish coding my task and before pushing my code to QA team.
+## A) we can track down a performance issue in production when we do a unit test in different browsers and find out performance issues and try solving them. I personally do this everytime when i finish coding my task and before pushing my code to QA team. Redux can also be used to track application performance real-time.
 
 
 5.	How would you improve the API that you just used?
