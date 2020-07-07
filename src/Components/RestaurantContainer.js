@@ -16,7 +16,7 @@ class RestaurantContainer extends Component {
       <div>
         <Container>
           <SearchRestaurants />
-          { this.props.loading ? <p>Loading</p> : null }
+          {this.props.loading ? <p>Loading</p> : null }
           <p className='total'>Total items: { this.props.refine ? this.props.restaurants.length : this.props.total }</p> 
           <RestaurantList restaurants={this.props.restaurants} />
         </Container>

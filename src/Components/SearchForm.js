@@ -31,7 +31,7 @@ class SearchRestaurants extends Component {
         event.preventDefault();
 
         if (!this.state.city) {
-            this.setState({ error: 'Please enter a city name'})
+            this.setState({error: 'Please enter a city name'})
         } else {
             this.setState({ error: ''})
             this.props.fetchData(this.state.city, this.state.refine);
@@ -45,33 +45,32 @@ class SearchRestaurants extends Component {
                 <Form onSubmit={this.onFormSubmit} className="form">
                     <FormGroup className="form1">
                         <Label className="names-1" for="cityName">City-Name</Label>
-                        <Input
-                            type="text"
-                            name="cityName"
-                            className="Search"
-                            placeholder="City"
-                            onChange={this.onChange}
-                            value={this.state.city}   
-                        />
+                            <Input
+                                type="text"
+                                name="cityName"
+                                className="Search"
+                                placeholder="City"
+                                onChange={this.onChange}
+                                value={this.state.city}   
+                            />
                     </FormGroup>
 
                     <FormGroup className="form2">
                         <Label className="names-2" for="refine">Address or PostalCode</Label>
-                        <Input
-                            type="text"
-                            name="refine"
-                            className="Search"
-                            placeholder="Restaurant Name or postalCode"
-                            onChange={this.onRefineChange}
-                            value={this.state.refine}
-                        />
+                            <Input
+                                type="text"
+                                name="refine"
+                                className="Search"
+                                placeholder="Restaurant Name or postalCode"
+                                onChange={this.onRefineChange}
+                                value={this.state.refine}
+                            />
                     </FormGroup>
 
                     <Button
                       className="Button" color="primary">
                         Search
                     </Button>
-
                     {this.state.error ? <p className="text-danger">{this.state.error}</p> : null}
                 </Form>
             </Col>

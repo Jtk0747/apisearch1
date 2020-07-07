@@ -4,18 +4,17 @@ import '../Css/App.css';
 import RestaurantContainer from './RestaurantContainer';
 
 
-class  App extends Component   {
+export default class App extends Component   {
  
   render() {
     return (
-    <div className="App">
-        <header  className="App-header">
-          <h1 className="App-title">Search for the Best Local Restaurants...!!</h1>
-        </header>
-     <RestaurantContainer />
-  </div>
-    );
+        <div className="App">
+          <header  className="App-header">
+            <h1 className="App-title">Search for the Best Local Restaurants...!!</h1>
+          </header>
+        <RestaurantContainer />
+      </div>
+      );
     }
   }
-   
-export default App;
+  
